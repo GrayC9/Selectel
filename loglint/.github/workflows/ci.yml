@@ -26,7 +26,7 @@ jobs:
       - run: go test -race -coverprofile=coverage.out ./...
       - uses: codecov/codecov-action@v4
         with:
-          file: coverage.out
+          file: loglint/coverage.out
         if: matrix.go-version == '1.24'
 
   lint:
