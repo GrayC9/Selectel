@@ -93,7 +93,7 @@ example/main.go:32:13: loglint: log message may contain sensitive data
 go build -tags plugin -buildmode=plugin -o loglint.so ./plugin/
 ```
 
-Добавляем в `.golangci.yml`:
+Добавляем в `.golangci.yml` целевого проекта:
 
 ```yaml
 linters-settings:
@@ -107,6 +107,8 @@ linters:
   enable:
     - loglint
 ```
+
+> **Примечание:** сборка плагина (`-buildmode=plugin`) поддерживается только на Linux и macOS. В CI линтер тестируется через `go test` с использованием `analysistest`.
 
 ## Конфигурация
 

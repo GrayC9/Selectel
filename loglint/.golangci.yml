@@ -1,10 +1,8 @@
-linters-settings:
-  custom:
-    loglint:
-      path: loglint.so
-      description: "Checks log messages for common issues"
-      original-url: "github.com/GrayC9/Selectel"
-
 linters:
   enable:
-    - loglint
+    - govet
+    - errcheck
+    - staticcheck
+    - gosimple
+    - ineffassign
+    - unused
