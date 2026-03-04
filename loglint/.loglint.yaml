@@ -1,0 +1,9 @@
+rules:
+  lowercase: true
+  english: true
+  no_special_chars: true
+  no_sensitive_data: true
+
+sensitive_patterns:
+  - "ssn"
+  - "credit_card"

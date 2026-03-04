@@ -1,0 +1,26 @@
+# IDE
+.idea/
+*.iml
+
+# Claude Code
+.claude/
+
+# Build artifacts
+*.so
+*.exe
+loglint/loglint
+
+# Test artifacts
+coverage.out
+*.test
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Task PDF
+backend_golang_testovoe.pdf
+
+# Root go.mod (GoLand template, not part of the project)
+/go.mod
+/main.go
